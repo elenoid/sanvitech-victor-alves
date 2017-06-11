@@ -11,7 +11,7 @@
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 25px;
   color: #111;
   text-transform: uppercase;
   text-align: center;
@@ -44,12 +44,18 @@
 
   .about-image{
     background: url(../img/uber-mich-img.jpg) left top no-repeat;
-    background-size: contain;
+    box-shadow: -3px 3px 8px #ccc;
+    background-size: cover;
     position: absolute;
     margin-left: 15px;
     top: 0;
     bottom: 0;
+
+    @media (max-width: 1200px){
+       width: 30%;
+    }
   }
+
   .about-container {
     background-size: contain;
     position: relative;
@@ -84,6 +90,7 @@
   .service-img {
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: -3px 3px 8px #eee;
     margin: 0 15px;
     height: 200px;
   }
@@ -96,6 +103,9 @@
   }
   .service-img3{
     background-image: url(../img/service-img3.jpg);
+  }
+  .service-img4{
+    background-image: url(../img/neubau-img1.jpg);
   }
   .service-text {
     line-height: 26px;
