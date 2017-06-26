@@ -5,13 +5,17 @@
   background: $color2;
   padding: 6px 0;
   height: 60px;
-  @media (max-width: 992px) {
-    height: 80px;
-  }
 
   #logo {
     float: left;
     padding-top: 12px;
+    @media (min-width: 768px){
+      padding: 0;
+    }
+    @media (min-width: 992px){
+      padding-top: 12px;
+    }
+
     h1 {
       font-size: 36px;
       margin: 0;
@@ -33,15 +37,15 @@
       max-height: 17px;
     }
   }
+
   @media (max-width: 768px) {
-    height: 80px;
     #logo {
       h1 {
         font-size: 26px;
       }
 
       img {
-        max-height: 40px;
+        max-height: 20px;
       }
     }
   }
