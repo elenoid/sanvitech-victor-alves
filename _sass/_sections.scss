@@ -44,22 +44,20 @@
 
   .about-image{
     background: url(../img/uber-mich-img.jpg) left top no-repeat;
-    box-shadow: -3px 3px 8px #ccc;
+    box-shadow: -25px 25px 0px $color2;
     background-size: cover;
     position: absolute;
-    margin-left: 15px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    width: 21%;
     top: 0;
     bottom: 0;
-
-    @media (max-width: 1200px){
-       width: 30%;
-    }
   }
 
   .about-container {
     background-size: contain;
     position: relative;
-    min-height: 380px;
+    min-height: 350px;
   }
 
   .about-title {
@@ -86,7 +84,7 @@
     display: inline-block;
     margin: 0;
     width: 100%;
-    padding: 17px 0;
+    padding: 25px 0;
     border: 1px solid;
     border-color: $color2;
     border-radius: 2px;
