@@ -75,6 +75,64 @@
     }
   }
 
+  .col-md-3--about-button{
+    padding: 30px;
+    padding-left: 0;
+  }
+
+  .about-button{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding: 17px 0;
+    border: 1px solid;
+    border-color: $color2;
+    border-radius: 2px;
+    background: $color2;
+    color: #eee;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s ease;
+    transition-property: border-color,background-color,color;
+  }
+
+  .about-button:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    border-radius: inherit;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .about-button:hover:after,
+  .about-button.hover:after {
+    top: 0;
+    bottom: 0;
+  }
+
+  .u-cta{
+    border-bottom-color: rgba(0,0,0,0.2);
+    border-bottom-width: 3px;
+  }
+
+  p{
+    margin: 0;
+  }
+
+  h4{
+    font-weight: 700;
+    margin: 0;
+  }
+
 }
 
 /* Services Section
@@ -110,7 +168,8 @@
     background-image: url(../img/neubau-img1.jpg);
   }
   .service-text {
-    margin-left: 20px;
+    padding: 0;
+    margin-left: 15px;
     line-height: 26px;
     &:last-child {
       margin-bottom: 0;
@@ -125,16 +184,92 @@
     p,strong{
       display: block;
       margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
-    p:last-child {
-      margin-bottom: 0px;
-    }
+  }
+
+  .panel--service-text{
+    padding: 15px;
+    box-shadow: none;
+    border-color: #67b7e2;
+  }
+
+  .panel--collapse{
+    border-color: #67b7e2;
+  }
+
+  .collapse-container{
+    padding: 0;
+  }
+  .panel-heading{
+    background-color: $color1;
+    color: #eee;
+  }
+  .panel,.panel-group,.panel-heading{
+    border-radius: 0;
+  }
+
+}
+
+/* CTA-Button Section
+--------------------------------*/
+#cta-button{
+  background-color: #78a1cb;
+  padding: 15px 0;
+
+  .button{
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    min-width: 100px;
+    padding: 12px 0px;
+    border: 1px solid;
+    border-color: $color2;
+    border-radius: 2px;
+    background: $color2;
+    color: #eee;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s ease;
+    transition-property: border-color,background-color,color;
+  }
+
+  .button:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    border-radius: inherit;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .button:hover:after,
+  .button.hover:after {
+    top: 0;
+    bottom: 0;
+  }
+
+  .u-cta{
+    border-bottom-color: rgba(0,0,0,0.2);
+    border-bottom-width: 3px;
+  }
+  h4{
+    font-weight: 700;
+    margin: 0;
   }
 
 }
 
 
-/* Portfolio Section
+/* Portfolio Section -- Referenz
 --------------------------------*/
 #portfolio {
   background: #eee;
@@ -152,9 +287,10 @@
     opacity: 0;
     transition: 1s opacity;
 
-    p {
+    p,strong {
+      display: block;
+      margin-bottom: 15px;
       line-height: 26px;
-      margin-top: 30px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -225,6 +361,16 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
+
+  .panel--referenz{
+    margin-top: 30px;
+    padding: 15px;
+    border-color: #ccc;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: inherit;
+    border-color: #67b7e2;
+  }
 }
 
 
@@ -276,5 +422,9 @@
 
   .contact-map{
     padding-right: 0;
+  }
+  #map{
+    width: 100%;
+    height: 160px;
   }
 }

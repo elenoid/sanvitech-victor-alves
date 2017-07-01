@@ -1,6 +1,18 @@
-
+// google-maps api
+function initMap() {
+  var uluru = {lat: 47.050168, lng: 8.309307};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
 
 jQuery(document).ready(function( $ ) {
+
 
   var counter = 0, // to keep track of current slide
       $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
@@ -70,7 +82,8 @@ jQuery(document).ready(function( $ ) {
         { src: "/img/vegas-plan.jpg" },
         { src: "/img/vegas-rohre4.jpg" },
     ]
-});
+  });
+
 
   // Mobile Navigation
   if( $('#nav-menu-container').length ) {
