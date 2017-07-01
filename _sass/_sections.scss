@@ -66,13 +66,6 @@
     font-size: 28px;
   }
 
-  .about-text {
-    line-height: 26px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   .col-md-3--about-button{
     padding: 30px;
     padding-left: 0;
@@ -122,8 +115,13 @@
     border-bottom-width: 3px;
   }
 
-  p{
-    margin: 0;
+  p,strong{
+    display: block;
+    margin-bottom: 10px;
+    line-height: 26px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   h4{
@@ -154,16 +152,20 @@
   }
   .service-img1{
     background-image: url(../img/neubau-img3.jpg);
+        background-size: cover;
   }
   .service-img2 {
     background-image: url(../img/umbau-img3.jpg);
     background-position: left;
+        background-size: cover;
   }
   .service-img3{
     background-image: url(../img/service-img3.jpg);
+    background-size: cover;
   }
   .service-img4{
     background-image: url(../img/neubau-img1.jpg);
+    background-size: cover;
   }
   .service-text {
     padding: 0;
@@ -181,7 +183,7 @@
     }
     p,strong{
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       &:last-child {
         margin-bottom: 0px;
       }
@@ -191,11 +193,11 @@
   .panel--service-text{
     padding: 15px;
     box-shadow: none;
-    border-color: #67b7e2;
+    border-color: #bbddf0;
   }
 
   .panel--collapse{
-    border-color: #67b7e2;
+    border-color: #bbddf0;
   }
 
   .collapse-container{
@@ -367,7 +369,23 @@
     box-shadow: none;
     border-radius: 0;
     background-color: inherit;
-    border-color: #67b7e2;
+    border-color: #bbddf0;
+  }
+}
+
+/* Association Section
+--------------------------------*/
+#association{
+  background-color: #ddd;
+  padding: 15px 0;
+  img{
+    margin-right: 100px;
+    @media (min-width: 0px){
+      width: 120px;
+    }
+    @media (min-width: 768px){
+      width: 150px;
+    }
   }
 }
 
