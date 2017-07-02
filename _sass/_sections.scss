@@ -508,13 +508,20 @@
   .contact-nav {
     font-weight: 900;
     margin-bottom: 20px;
+    padding:10px 0;
     @media (max-width: 480px){
+      margin-left: 15px;
       width: 100%;
     }
   }
 
   .contact-info{
     margin-bottom: 20px;
+    padding:10px 0;
+    @media (max-width: 480px){
+      margin-left: 15px;
+      width: 100%;
+    }
   }
 
   .contact-info li:first-child{

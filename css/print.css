@@ -1,0 +1,28 @@
+
+#header{
+  display: none !important;
+}
+#hero{
+  display: none !important;
+}
+#mobile-nav-toggle{
+  display: none !important;
+}
+.button{
+  display: none !important;
+}
+.about-image{
+  display: none !important;
+}
+.about-content{
+  left: 8.33333333% !important;
+}
+.img-wrapper img{
+  display: none !important;
+}
+#footer{
+  display: none !important;
+}
+#mobile-nav{
+  display: none !important;
+}
