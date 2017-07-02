@@ -45,19 +45,28 @@
   .about-image{
     background: url(../img/uber-mich-img.jpg) left top no-repeat;
     box-shadow: -25px 25px 0px $color2;
+    border: 2px solid #fff;
     background-size: cover;
     position: absolute;
     margin-left: 40px;
     margin-bottom: 25px;
-    width: 21%;
     top: 0;
     bottom: 0;
+    @media (min-width : 1200px) {
+      width: 21%;
+    }
   }
 
   .about-container {
     background-size: contain;
     position: relative;
-    min-height: 350px;
+    min-height: 250px;
+  }
+
+  .about-content{
+    @media (max-width : 768px) {
+      margin: 0 15px;
+    }
   }
 
   .about-title {
@@ -89,6 +98,9 @@
     text-decoration: none;
     transition: .3s ease;
     transition-property: border-color,background-color,color;
+    @media (max-width : 1200px) {
+      padding: 12px 0;
+    }
   }
 
   .about-button:after{
@@ -137,7 +149,7 @@
   background: url("../img/sanvitech-logo-background.jpg") fixed center center;
   background-color: #fff;
   background-size: cover;
-  padding: 70px 0 60px 0;
+  padding: 70px 0 100px 0;
 
   .services-section-title{
     text-align: left;
@@ -146,25 +158,26 @@
   .service-img {
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: -3px 3px 8px #eee;
+    box-shadow: -3px 3px 8px #ccc;
+    border: 2px solid #fff;
     margin: 0 15px;
     height: 200px;
   }
   .service-img1{
-    background-image: url(../img/neubau-img3.jpg);
+    background-image: url(../img/service-eisenstangen.jpg);
         background-size: cover;
   }
   .service-img2 {
-    background-image: url(../img/umbau-img3.jpg);
+    background-image: url(../img/service-farbpalette.jpg);
     background-position: left;
         background-size: cover;
   }
   .service-img3{
-    background-image: url(../img/service-img3.jpg);
+    background-image: url(../img/service-duschkopf.jpg);
     background-size: cover;
   }
   .service-img4{
-    background-image: url(../img/neubau-img1.jpg);
+    background-image: url(../img/service-waschmaschine.jpg);
     background-size: cover;
   }
   .service-text {
@@ -273,7 +286,7 @@
 --------------------------------*/
 #portfolio {
   background: #eee;
-  padding: 70px 0;
+  padding: 100px 0 70px 0;
 
 
   .diy-slideshow{
@@ -302,6 +315,10 @@
       display: block;
       margin: 0 auto;
     }
+    .img-wrapper{
+      border: 2px solid #fff;
+      box-shadow: -3px 3px 8px #ccc;
+    }
 
     .img-wrapper:before{
       content: "Für mehr Referenzen, klick auf die Pfeile.";
@@ -314,7 +331,7 @@
       vertical-align: middle;
       display: block;
       width: 100%;
-      height: 500px;
+      height: 504px;
       top: 0;
       left: 0;
     }
@@ -350,13 +367,13 @@
   }
 
   .next{
-    right: 0;
+    right: 2px;
     padding: 10px 5px 15px 10px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
   .prev{
-    left: 0;
+    left: 2px;
     padding: 10px 10px 15px 5px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -442,5 +459,6 @@
   #map{
     width: 100%;
     height: 160px;
+    border: 2px solid #fff;
   }
 }
