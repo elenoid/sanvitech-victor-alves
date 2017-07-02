@@ -76,8 +76,7 @@
   }
 
   .col-md-3--about-button{
-    padding: 30px;
-    padding-left: 0;
+    padding: 15px;
   }
 
   .about-button{
@@ -146,10 +145,12 @@
 /* Services Section
 --------------------------------*/
 #services {
-  background: url("../img/sanvitech-logo-background.jpg") fixed center center;
   background-color: #fff;
-  background-size: cover;
   padding: 70px 0 100px 0;
+  @media (min-width: 1200px){
+     background: url("../img/sanvitech-logo-background.jpg") fixed center center;
+     background-size: cover;
+  }
 
   .services-section-title{
     text-align: left;
@@ -160,7 +161,7 @@
     background-repeat: no-repeat;
     box-shadow: -3px 3px 8px #ccc;
     border: 2px solid #fff;
-    margin: 0 15px;
+    margin: 0 30px;
     height: 200px;
   }
   .service-img1{
@@ -182,7 +183,7 @@
   }
   .service-text {
     padding: 0;
-    margin-left: 15px;
+    margin:0 30px;
     line-height: 26px;
     &:last-child {
       margin-bottom: 0;
@@ -288,11 +289,19 @@
   background: #eee;
   padding: 100px 0 70px 0;
 
+  .col__diy-slideshow{
+    padding: 0;
+  }
+
 
   .diy-slideshow{
     position: relative;
     display: block;
     overflow: hidden;
+    margin: 0 30px;
+    @media (min-width: 768px){
+      margin: 0 15px;
+    }
   }
 
   figure{
@@ -311,9 +320,31 @@
 
     img{
       width: 100%;
-      height: 500px;
-      display: block;
+      display: none;
+      height: 160px;
       margin: 0 auto;
+      @media (min-width: 320px){
+        height: 160px;
+        display: block;
+      }
+      @media (min-width: 400px){
+        height: 205px;
+      }
+      @media (min-width: 480px){
+        height: 250px;
+      }
+      @media (min-width: 625px){
+        height: 332px;
+      }
+      @media (min-width: 768px){
+        height: 403px;
+      }
+      @media (min-width: 992px){
+        height: 435px;
+      }
+      @media (min-width: 1200px){
+        height: 530px;
+      }
     }
     .img-wrapper{
       border: 2px solid #fff;
@@ -329,11 +360,32 @@
       position: absolute;
       text-align: center;
       vertical-align: middle;
-      display: block;
+      display: none;
       width: 100%;
-      height: 504px;
       top: 0;
       left: 0;
+      @media (min-width: 320px){
+        height: 164px;
+        display: block;
+      }
+      @media (min-width: 400px){
+        height: 209px;
+      }
+      @media (min-width: 480px){
+        height: 254px;
+      }
+      @media (min-width: 625px){
+        height: 336px;
+      }
+      @media (min-width: 768px){
+        height: 407px;
+      }
+      @media (min-width: 992px){
+        height: 439px;
+      }
+      @media (min-width: 1200px){
+        height: 534px;
+      }
     }
 
 
@@ -351,14 +403,25 @@
 
 
   .next, .prev{
-    margin-top: 220px;
     color: #fff;
+    margin-top: 25%;
     position: absolute;
     background: rgba(39, 153, 214, 0.7);
     top: 0;
     z-index: 1;
     font-size: 2em;
     user-select: none;
+    display: none;
+    @media (min-width: 320px){
+      margin-top: 18%;
+      display: block;
+    }
+    @media (min-width: 480px){
+      margin-top: 22%;
+    }
+    @media (min-width: 768px){
+      margin-top: 25%;
+    }
   }
 
   .next:hover, .prev:hover{
@@ -396,9 +459,11 @@
   background-color: #ddd;
   padding: 15px 0;
   img{
-    margin-right: 100px;
-    @media (min-width: 0px){
-      width: 120px;
+    margin-right: 20px;
+    padding: 5px;
+    width: 120px;
+    @media (min-width: 480px){
+      margin-right: 100px;
     }
     @media (min-width: 768px){
       width: 150px;
@@ -441,11 +506,15 @@
   }
 
   .contact-nav {
-    padding-left: 0;
+    font-weight: 900;
+    margin-bottom: 20px;
+    @media (max-width: 480px){
+      width: 100%;
+    }
   }
 
-  .contact-nav {
-    font-weight: 900;
+  .contact-info{
+    margin-bottom: 20px;
   }
 
   .contact-info li:first-child{
@@ -454,7 +523,7 @@
   }
 
   .contact-map{
-    padding-right: 0;
+    padding:0;
   }
   #map{
     width: 100%;
