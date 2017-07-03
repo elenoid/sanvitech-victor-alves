@@ -123,37 +123,43 @@ jQuery(document).ready(function( $ ) {
   // Stick the header at top on scroll
   $("#header").sticky({topSpacing:0, zIndex: '50'});
 
-  // Smooth scroll on page hash links
-  // $('a[href*="#"]:not([href="#"]):not([href="#carousel-example-generic"])').on('click', function() {
-  //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //         var target = $(this.hash);
-  //         if (target.length) {
-  //
-  //             var top_space = 0;
-  //
-  //             if( $('#header').length ) {
-  //               top_space = $('#header').outerHeight();
-  //             }
-  //
-  //             $('html, body').animate({
-  //                 scrollTop: target.offset().top - top_space
-  //             }, 1500, 'easeInOutExpo');
-  //
-  //             if ( $(this).parents('.nav-menu').length ) {
-  //               $('.nav-menu .menu-active').removeClass('menu-active');
-  //               $(this).closest('li').addClass('menu-active');
-  //             }
-  //
-  //             if ( $('body').hasClass('mobile-nav-active') ) {
-  //                 $('body').removeClass('mobile-nav-active');
-  //                 $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-  //                 $('#mobile-body-overly').fadeOut();
-  //             }
-  //
-  //             return false;
-  //         }
-  //     }
-  // });
+// Smooth scrolling
+
+  // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .not('[href="#collapseOne"]')
+  .not('[href="#collapseTwo"]')
+  .not('[href="#collapseThree"]')
+  .not('[href="#collapseFour"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+        });
+      }
+    }
+  });
+
 
   // Back to top button
   $(window).scroll(function() {
