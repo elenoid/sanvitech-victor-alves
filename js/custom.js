@@ -78,9 +78,9 @@ jQuery(document).ready(function( $ ) {
     overlay: 'lib/vegas-slide/overlays/00.png',
     transitionDuration: 5000,
     slides: [
-        { src: "/img/vegas-rohre.jpg" },
-        { src: "/img/vegas-plan.jpg" },
-        { src: "/img/vegas-rohre4.jpg" },
+        { src: "img/vegas-rohre.jpg" },
+        { src: "img/vegas-plan.jpg" },
+        { src: "img/vegas-rohre4.jpg" },
     ]
   });
 
