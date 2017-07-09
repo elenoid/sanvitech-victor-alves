@@ -152,6 +152,11 @@
      background-size: cover;
   }
 
+  a:hover, a:active, a:focus {
+    color: #eee;
+    transition: none;
+  }
+
   .services-section-title{
     text-align: left;
   }
@@ -165,11 +170,11 @@
     height: 200px;
   }
   .service-img1{
-    background-image: url(../img/service-eisenstangen.jpg);
+    background-image: url(../img/service-bolzen.jpg);
         background-size: cover;
   }
   .service-img2 {
-    background-image: url(../img/service-farbpalette.jpg);
+    background-image: url(../img/service-bad.jpg);
     background-position: left;
         background-size: cover;
   }
