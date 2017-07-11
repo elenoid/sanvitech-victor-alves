@@ -14,7 +14,7 @@ function initMap() {
 jQuery(document).ready(function( $ ) {
 
 // verpixelung IE fix
-  $('img.first').bicubicImgInterpolation({
+  $('.first').bicubicImgInterpolation({
     crossOrigin: 'anonymous' //for demo purpose
 });
 
