@@ -13,10 +13,6 @@ function initMap() {
 
 jQuery(document).ready(function( $ ) {
 
-// verpixelung IE fix
-  $('.first').bicubicImgInterpolation({
-    crossOrigin: 'anonymous' //for demo purpose
-});
 
 
   var counter = 0, // to keep track of current slide
