@@ -148,7 +148,7 @@
   background-color: #fff;
   padding: 70px 0 100px 0;
   @media (min-width: 1200px){
-     background: url("../img/sanvitech-logo-background.jpg") fixed center center;
+     background: url("../img/sanvitech-logo-background-service.jpg") fixed center center;
      background-size: cover;
   }
 
@@ -293,6 +293,10 @@
 #portfolio {
   background: #eee;
   padding: 100px 0 70px 0;
+  @media (min-width: 1200px){
+     background: url("../img/sanvitech-logo-background-portfolio.jpg") fixed center center;
+     background-size: cover;
+  }
 
   .col__diy-slideshow{
     padding: 0;
